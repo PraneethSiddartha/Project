@@ -1,0 +1,152 @@
+/* Gradient background */
+body {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; /* Prevents unnecessary scrolling */
+}
+
+/* Start Page */
+.start-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Get Started Button */
+.get-started {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #ff9800;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.get-started:hover {
+  background-color: #e68900;
+}
+
+/* Page Container */
+.page-container {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-height: 80vh;
+  overflow-y: auto; /* Enables scrolling */
+}
+
+/* Hide scrollbar but keep content scrollable */
+.page-container::-webkit-scrollbar,
+.result::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+.page-container,
+.result {
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Text Input */
+.text-input {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  outline: none;
+  resize: none;
+}
+
+/* Analyze Button */
+.analyze-button {
+  padding: 12px 25px;
+  font-size: 18px;
+  background: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.analyze-button:hover {
+  background: #e91e63;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4d4d;
+  margin-top: 10px;
+}
+
+/* Result Section */
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  max-height: 300px;
+  overflow-y: auto; /* Enables scrolling */
+  
+  display: flex; /* Flexbox for centering */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pie Chart & Probability Row */
+.result-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between chart and text */
+  width: 100%;
+  flex-wrap: wrap; /* Adjusts layout for smaller screens */
+}
+
+/* Pie Chart Container */
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* Adjust size if needed */
+}
+
+/* Probability Text */
+.probabilities {
+  font-size: 18px;
+  text-align: left;
+  width: 50%; /* Adjust width */
+}
+
+/* Pie Chart Custom Styling */
+.recharts-legend-item text {
+  fill: white !important; /* Ensures legend text is visible */
+}
